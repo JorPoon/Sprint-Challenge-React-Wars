@@ -39,7 +39,7 @@ render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div className="characterStepOne">
+        <div className="allChar">
 
         <CharacterList characterList={this.state.starwarsChars}  />
           {/* {

@@ -1,0 +1,13 @@
+
+
+.stats {
+    border: 1px solid rgb(150, 137, 137);
+    margin: 15px 200px;
+    padding: 20px;
+    font-weight: 700;
+    font-family: fantasy;
+    font-size: 1.1rem;
+    text-decoration: underline overline;
+    border-radius: 50px;
+   
+}
