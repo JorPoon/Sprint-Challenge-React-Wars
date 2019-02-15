@@ -10,6 +10,8 @@ To think in react is to see how to break down the information you want to show i
 
 1.  Briefly describe some of the differences between a Class/Stateful component and a Functional/Presentational component.
 
+Class component consists of the base data you want to represent in your app. It is the minimum requirement of represenation. Functional component only consists of one prop and it is to render out that specific prop or whatever is in the component. It does not consist of the main data you have to make react out of.
+
 1.  Describe state.
 
 1.  Describe props.
