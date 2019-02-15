@@ -29,10 +29,22 @@ class App extends Component {
       });
   };
 
-  render() {
+// 1. Make sure to know how to render Character names. 
+// 2. Make single character component and a character list component
+// 3. Make sure to render both components inside App.js
+// 4. Style the character component.
+  
+render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="characterStepOne">
+          {
+            this.state.starwarsChars.map(char => (
+              char.name
+            ))
+          }
+        </div>
       </div>
     );
   }
