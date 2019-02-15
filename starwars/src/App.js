@@ -6,7 +6,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentpage: 1,
     };
   }
 
@@ -23,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -30,10 +32,10 @@ class App extends Component {
       });
   };
 
-// 1. Make sure to know how to render Character names. 
-// 2. Make single character component and a character list component
-// 3. Make sure to render both components inside App.js
-// 4. Style the character component.
+// 1. Make sure to know how to render Character names. (done)
+// 2. Make single character component and a character list component (done)
+// 3. Make sure to render both components inside App.js (done)
+// 4. Style the character component. (done)
   
 render() {
     return (
