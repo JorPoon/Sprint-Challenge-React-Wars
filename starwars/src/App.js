@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      currentpage: 1,
     };
   }
 
@@ -22,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -29,10 +32,24 @@ class App extends Component {
       });
   };
 
-  render() {
+// 1. Make sure to know how to render Character names. (done)
+// 2. Make single character component and a character list component (done)
+// 3. Make sure to render both components inside App.js (done)
+// 4. Style the character component. (done)
+  
+render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="allChar">
+
+        <CharacterList characterList={this.state.starwarsChars}  />
+          {/* {
+            this.state.starwarsChars.map(char => (
+              char.name
+            ))
+          } */}
+        </div>
       </div>
     );
   }
