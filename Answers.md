@@ -14,4 +14,8 @@ Class component consists of the base data you want to represent in your app. It 
 
 1.  Describe state.
 
+State is the main data for our components to render out or access. 
+
 1.  Describe props.
+
+Props are read only data that are being passed around in our components for UI display and interactions.
